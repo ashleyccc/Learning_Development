@@ -1,0 +1,2 @@
+﻿const ENV_VARS = {
+};

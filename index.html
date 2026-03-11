@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeenTycoon | Level Up Your Wealth</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Premium Top Navigation -->
+        <nav class="top-nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fa-solid fa-chart-line text-accent"></i> 
+                    <span>Wealth<span style="font-weight: 300;">Builder</span></span>
+                </div>
+                <ul class="nav-links">
+                    <li class="active" data-target="home">Home</li>
+                    <li data-target="roadmap">Roadmap</li>
+                    <li data-target="tools">Tools</li>
+                    <li data-target="insights">Insights</li>
+                    <li data-target="professionals">Professionals</li>
+                    <li data-target="mentor"><i class="fa-solid fa-robot text-accent"></i> AI Mentor</li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="btn-secondary">Log In</button>
+                    <button class="btn-primary">Get Started</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+
+            <!-- Home View (Scrolling Landing Page) -->
+            <section id="home" class="view active-view">
+                
+                <!-- Hero Section -->
+                <div class="hero-section">
+                    <div class="hero-bg-grid"></div>
+                    <div class="hero-content">
+                        <h1>Learn How <span class="text-accent">Money Works.</span><br>Then Make It Work for You.</h1>
+                        <p>Increase your income, understand complex finance, build long-term wealth, and make smarter financial decisions with data-driven tools and actionable roadmaps.</p>
+                        <div class="hero-cta">
+                            <button class="btn-primary btn-lg" onclick="app.navigateTo('roadmap')">Start Building Wealth</button>
+                            <button class="btn-secondary btn-lg" onclick="app.navigateTo('tools')">Explore Tools</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ticker Strip -->
+                <div class="ticker-wrap">
+                    <div class="ticker">
+                        <div class="ticker-item"><span class="ticker-symbol">S&P 500</span> <span class="text-success">+1.24%</span></div>
+                        <div class="ticker-item"><span class="ticker-symbol">NASDAQ</span> <span class="text-success">+1.56%</span></div>
+                        <div class="ticker-item"><span class="ticker-symbol">DOW</span> <span class="text-success">+0.89%</span></div>
+                        <div class="ticker-item"><span class="ticker-symbol">BTC</span> <span class="text-success">+4.20%</span></div>
+                        <div class="ticker-item"><span class="ticker-symbol">10Y T-NOTE</span> <span class="text-warning">4.12%</span></div>
+                        <div class="ticker-item"><span class="ticker-symbol">AAPL</span> <span class="text-success">+0.45%</span></div>
+                        <div class="ticker-item"><span class="ticker-symbol">AMZN</span> <span class="text-success">+1.12%</span></div>
+                    </div>
+                </div>
+
+                <!-- Viral / Interactive Features Section -->
+                <section class="home-section bg-darker" id="tools-section">
+                    <div class="section-container">
+                        <div class="section-header">
+                            <h2>Popular Tools</h2>
+                            <p>Data-driven calculators and simulators to project your wealth and analyze your next move.</p>
+                        </div>
+                        
+                        <div class="tools-grid">
+                            
+                            <!-- Tool 1 -->
+                            <div class="tool-card glass-card">
+                                <div class="tool-icon"><i class="fa-solid fa-chart-line"></i></div>
+                                <h4>Net Worth Simulator</h4>
+                                <p>Project your future wealth based on salary, savings, and investment returns.</p>
+                                <button class="btn-secondary">Open Tool <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+
+                            <!-- Tool 2 -->
+                            <div class="tool-card glass-card">
+                                <div class="tool-icon text-accent"><i class="fa-solid fa-ranking-star"></i></div>
+                                <h4>How Rich Are You?</h4>
+                                <p>Compare your current income and total net worth percentile.</p>
+                                <button class="btn-secondary">Open Tool <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+
+                            <!-- Tool 3 -->
+                            <div class="tool-card glass-card">
+                                <div class="tool-icon text-primary"><i class="fa-solid fa-cubes"></i></div>
+                                <h4>Real-Time Portfolio Builder</h4>
+                                <p>Test different asset allocations, diversification, and historical returns.</p>
+                                <button class="btn-secondary">Open Tool <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+
+                            <!-- Tool 4 -->
+                            <div class="tool-card glass-card">
+                                <div class="tool-icon text-success"><i class="fa-solid fa-snowflake"></i></div>
+                                <h4>Compound Interest Visualizer</h4>
+                                <p>Watch how your money exponentially grows over time with dynamic charts.</p>
+                                <button class="btn-secondary">Open Tool <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+
+                            <!-- Tool 5 -->
+                            <div class="tool-card glass-card">
+                                <div class="tool-icon text-warning"><i class="fa-solid fa-briefcase"></i></div>
+                                <h4>Side Hustle ROI Calculator</h4>
+                                <p>Compare the startup cost, time effort, and return potential of side hustles.</p>
+                                <button class="btn-secondary">Open Tool <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+
+                            <!-- Tool 6 -->
+                            <div class="tool-card glass-card">
+                                <div class="tool-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                                <h4>Finance Career Salary Map</h4>
+                                <p>Compare average salaries across finance careers, major cities, and experience levels.</p>
+                                <button class="btn-secondary">Open Tool <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+
+                            <!-- Tool 7 -->
+                            <div class="tool-card glass-card">
+                                <div class="tool-icon text-primary"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                                <h4>Famous Investor Portfolios</h4>
+                                <p>Breakdowns of portfolios and holdings for well-known billionaire investors.</p>
+                                <button class="btn-secondary">Open Tool <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+
+                            <!-- Tool 8 -->
+                            <div class="tool-card glass-card">
+                                <div class="tool-icon text-warning"><i class="fa-solid fa-bolt"></i></div>
+                                <h4>Market Events Explainer</h4>
+                                <p>Visual breakdowns of inflation, interest rates, recessions, and market shocks.</p>
+                                <button class="btn-secondary">Open Tool <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+
+                            <!-- Tool 9 -->
+                            <div class="tool-card glass-card">
+                                <div class="tool-icon text-accent"><i class="fa-solid fa-scale-balanced"></i></div>
+                                <h4>Financial Decision Simulator</h4>
+                                <p>Run the math on Buy vs Rent, Pay Off Debt vs Invest, and Lump Sum vs DCA.</p>
+                                <button class="btn-secondary">Open Tool <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+
+                            <!-- Tool 10 -->
+                            <div class="tool-card glass-card">
+                                <div class="tool-icon text-success"><i class="fa-solid fa-shield-halved"></i></div>
+                                <h4>Finance Myths Debunked</h4>
+                                <p>Challenges bad mainstream money advice and common misconceptions.</p>
+                                <button class="btn-secondary">Open Tool <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Built for Serious Thinkers Section -->
+                <section id="professionals-section" class="home-section">
+                    <div class="section-container" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; align-items: center;">
+                        <div>
+                            <h2 style="font-size: 40px; margin-bottom: 24px;">Built for <span class="text-accent">Serious Thinkers.</span></h2>
+                            <p style="color: var(--text-muted); font-size: 18px; line-height: 1.6; margin-bottom: 32px;">We stripped away the clickbait and crypto-hype to focus entirely on credible financial frameworks. This platform is engineered for professionals, students, and ambitious individuals who want data-driven insights.</p>
+                            
+                            <ul style="list-style: none; display: flex; flex-direction: column; gap: 16px;">
+                                <li style="display: flex; align-items: center; gap: 12px; font-weight: 600; font-size: 16px;"><i class="fa-solid fa-circle-check text-success"></i> Data-driven algorithms</li>
+                                <li style="display: flex; align-items: center; gap: 12px; font-weight: 600; font-size: 16px;"><i class="fa-solid fa-circle-check text-success"></i> Credible financial frameworks</li>
+                                <li style="display: flex; align-items: center; gap: 12px; font-weight: 600; font-size: 16px;"><i class="fa-solid fa-circle-check text-success"></i> Professional-grade calculators</li>
+                                <li style="display: flex; align-items: center; gap: 12px; font-weight: 600; font-size: 16px;"><i class="fa-solid fa-circle-check text-success"></i> Clean charts and dashboards</li>
+                            </ul>
+                        </div>
+                        <div class="glass-card" style="position: relative; overflow: hidden; border-color: var(--accent); padding: 40px;">
+                            <div style="position: absolute; top: 0; right: 0; filter: blur(60px); opacity: 0.15; width: 300px; height: 300px; background: var(--accent); border-radius: 50%;"></div>
+                            <h3 style="margin-bottom: 20px;">Compound Growth <span class="dim">(Example)</span></h3>
+                            <div class="placeholder-chart" style="height: 200px; border-bottom-color: rgba(255,255,255,0.05);">
+                                <div class="bar" style="height: 20%"></div>
+                                <div class="bar" style="height: 35%"></div>
+                                <div class="bar" style="height: 48%"></div>
+                                <div class="bar" style="height: 65%"></div>
+                                <div class="bar" style="height: 85%"></div>
+                                <div class="bar" style="height: 100%; background: var(--accent);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Featured Insights Section -->
+                <section id="insights-section" class="home-section bg-darker">
+                    <div class="section-container">
+                        <div class="section-header">
+                            <h2>Featured Insights</h2>
+                            <p>Deep-dives and actionable frameworks to level up your investing intelligence.</p>
+                        </div>
+                        <div class="grid-3" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+                            
+                            <div class="glass-card article-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                                <div style="height: 180px; background: url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=600&q=80') center/cover;"></div>
+                                <div style="padding: 24px; flex: 1; display: flex; flex-direction: column;">
+                                    <span style="color: var(--accent); font-weight: 700; font-size: 13px; text-transform: uppercase; margin-bottom: 8px;">Wealth Building</span>
+                                    <h4 style="font-size: 20px; margin-bottom: 12px; line-height: 1.4;">How to Build Your First $100k</h4>
+                                    <p style="color: var(--text-muted); line-height: 1.5; margin-bottom: 24px; font-size: 15px;">The math behind the hardest financial milestone, and why the next $100k is mathematically easier.</p>
+                                    <a href="#" style="color: var(--text-main); font-weight: 600; text-decoration: none; margin-top: auto; display: flex; align-items: center; gap: 8px;">Read Analysis <i class="fa-solid fa-arrow-right" style="font-size: 12px; color: var(--accent);"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="glass-card article-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                                <div style="height: 180px; background: url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=600&q=80') center/cover;"></div>
+                                <div style="padding: 24px; flex: 1; display: flex; flex-direction: column;">
+                                    <span style="color: var(--primary); font-weight: 700; font-size: 13px; text-transform: uppercase; margin-bottom: 8px;">Career & Income</span>
+                                    <h4 style="font-size: 20px; margin-bottom: 12px; line-height: 1.4;">Best Side Hustles for Finance Minds</h4>
+                                    <p style="color: var(--text-muted); line-height: 1.5; margin-bottom: 24px; font-size: 15px;">High-ROI secondary income streams that leverage your analytical skills instead of your time.</p>
+                                    <a href="#" style="color: var(--text-main); font-weight: 600; text-decoration: none; margin-top: auto; display: flex; align-items: center; gap: 8px;">Read Analysis <i class="fa-solid fa-arrow-right" style="font-size: 12px; color: var(--accent);"></i></a>
+                                </div>
+                            </div>
+
+                             <div class="glass-card article-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                                <div style="height: 180px; background: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=600&q=80') center/cover;"></div>
+                                <div style="padding: 24px; flex: 1; display: flex; flex-direction: column;">
+                                    <span style="color: var(--warning); font-weight: 700; font-size: 13px; text-transform: uppercase; margin-bottom: 8px;">Real Estate</span>
+                                    <h4 style="font-size: 20px; margin-bottom: 12px; line-height: 1.4;">Renting vs Buying: The Financial Reality</h4>
+                                    <p style="color: var(--text-muted); line-height: 1.5; margin-bottom: 24px; font-size: 15px;">Why a mortgage isn't always better than renting when you factor in opportunity cost.</p>
+                                    <a href="#" style="color: var(--text-main); font-weight: 600; text-decoration: none; margin-top: auto; display: flex; align-items: center; gap: 8px;">Read Analysis <i class="fa-solid fa-arrow-right" style="font-size: 12px; color: var(--accent);"></i></a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Signature Viral Feature ($100 Invested) -->
+                <section class="home-section" style="border-top: 1px solid var(--border-color); background: radial-gradient(circle at 50% 100%, rgba(16, 185, 129, 0.05), transparent 60%);">
+                    <div class="section-container" style="text-align: center;">
+                        <h2 style="font-size: 40px; margin-bottom: 16px;">What <span class="text-success">$100</span> Invested in 1990 is Worth Today.</h2>
+                        <p style="color: var(--text-muted); font-size: 18px; line-height: 1.6; margin-bottom: 48px; max-width: 600px; margin-left: auto; margin-right: auto;">The power of holding assets long-term, visualised. Time in the market always beats timing the market.</p>
+                        
+                        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+                            <div class="glass-card" style="min-width: 200px; text-align: left; border-top: 3px solid var(--text-muted);">
+                                <div style="color: var(--text-muted); font-weight: 700; margin-bottom: 8px;">Cash (Piggy Bank)</div>
+                                <div style="font-size: 32px; font-weight: 800; font-family: var(--font-mono);">$41.00</div>
+                                <div style="color: #ef4444; font-size: 13px; margin-top: 4px;">Loss to inflation</div>
+                            </div>
+                            
+                            <div class="glass-card" style="min-width: 200px; text-align: left; border-top: 3px solid var(--warning);">
+                                <div style="color: var(--warning); font-weight: 700; margin-bottom: 8px;">Gold</div>
+                                <div style="font-size: 32px; font-weight: 800; font-family: var(--font-mono);">$612</div>
+                                <div style="color: var(--success); font-size: 13px; margin-top: 4px;">+512% return</div>
+                            </div>
+
+                            <div class="glass-card" style="min-width: 200px; text-align: left; border-top: 3px solid var(--accent);">
+                                <div style="color: var(--accent); font-weight: 700; margin-bottom: 8px;">S&P 500</div>
+                                <div style="font-size: 32px; font-weight: 800; font-family: var(--font-mono);">$3,180</div>
+                                <div style="color: var(--success); font-size: 13px; margin-top: 4px;">+3,080% return</div>
+                            </div>
+
+                            <div class="glass-card" style="min-width: 200px; text-align: left; border-top: 3px solid var(--primary);">
+                                <div style="color: var(--primary); font-weight: 700; margin-bottom: 8px;">Apple (AAPL)</div>
+                                <div style="font-size: 32px; font-weight: 800; font-family: var(--font-mono);">$64,200</div>
+                                <div style="color: var(--success); font-size: 13px; margin-top: 4px;">+64,100% return</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Trust / Credibility Section -->
+                <section class="home-section bg-darker" style="text-align: center; padding: 120px 40px;">
+                    <h2 style="font-size: 48px; letter-spacing: -1px; margin-bottom: 24px;">No Hype. <br>Just Better Financial Decisions.</h2>
+                    <p style="color: var(--text-muted); font-size: 20px; max-width: 600px; margin: 0 auto;">No crypto pumping, no get-rich-quick schemes. Just data, math, and blueprints designed for intelligent long-term wealth building.</p>
+                </section>
+
+                <!-- Email / Community CTA -->
+                <section class="home-section" style="padding: 100px 40px; display: flex; justify-content: center;">
+                    <div class="glass-card" style="max-width: 800px; width: 100%; text-align: center; padding: 60px 40px; background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(59, 130, 246, 0.05)); border-color: rgba(16, 185, 129, 0.3);">
+                        <h2 style="font-size: 36px; margin-bottom: 16px;">Get one sharp finance insight every week.</h2>
+                        <p style="color: var(--text-muted); font-size: 18px; margin-bottom: 32px;">Join ambitious professionals getting our latest market breakdowns, calculator releases, and practical money strategies perfectly summarized for your inbox.</p>
+                        
+                        <form style="display: flex; max-width: 500px; margin: 0 auto; gap: 12px;" onsubmit="event.preventDefault(); alert('Subscribed!');">
+                            <input type="email" placeholder="Enter your email address" required style="flex: 1; padding: 16px 24px; border-radius: var(--radius-sm); border: 1px solid var(--border-color); background: var(--bg-darker); color: white; font-size: 16px; outline: none;">
+                            <button type="submit" class="btn-primary" style="padding: 16px 32px; font-size: 16px;">Subscribe</button>
+                        </form>
+                    </div>
+                </section>
+
+            </section>
+
+            <!-- Footer -->
+            <footer style="background: var(--bg-darker); border-top: 1px solid var(--border-color); padding: 60px 40px 40px 40px;">
+                <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px; margin-bottom: 40px;">
+                    <div style="max-width: 300px;">
+                        <div class="logo" style="margin-bottom: 16px;">
+                            <i class="fa-solid fa-chart-line text-accent"></i> 
+                            <span>Wealth<span style="font-weight: 300;">Builder</span></span>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6;">Premium financial tools and education for the modern professional. Learn how money works, and make better decisions.</p>
+                    </div>
+                    <div style="display: flex; gap: 60px;">
+                        <div>
+                            <h4 style="margin-bottom: 16px; font-size: 16px;">Platform</h4>
+                            <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; color: var(--text-muted); font-size: 14px;">
+                                <li><a href="#" style="color: inherit; text-decoration: none;">Tools & Calculators</a></li>
+                                <li><a href="#" style="color: inherit; text-decoration: none;">Roadmaps</a></li>
+                                <li><a href="#" style="color: inherit; text-decoration: none;">Market News</a></li>
+                                <li><a href="#" style="color: inherit; text-decoration: none;">AI Mentor</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 16px; font-size: 16px;">Company</h4>
+                            <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; color: var(--text-muted); font-size: 14px;">
+                                <li><a href="#" style="color: inherit; text-decoration: none;">About Us</a></li>
+                                <li><a href="#" style="color: inherit; text-decoration: none;">Contact</a></li>
+                                <li><a href="#" style="color: inherit; text-decoration: none;">Privacy Policy</a></li>
+                                <li><a href="#" style="color: inherit; text-decoration: none;">Terms of Service</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div style="max-width: 1200px; margin: 0 auto; padding-top: 24px; border-top: 1px solid var(--border-color); color: var(--text-muted); font-size: 12px; line-height: 1.6; text-align: center;">
+                    <p><strong>Disclaimer:</strong> The content provided on WealthBuilder is for educational and informational purposes only and does not constitute financial, investment, or legal advice. Always consult with a qualified financial advisor before making major financial decisions. Past performance of any asset is not necessarily indicative of future results.</p>
+                    <p style="margin-top: 12px;">&copy; 2026 WealthBuilder. All rights reserved.</p>
+                </div>
+            </footer>
+
+            <!-- Modules / Quests View (Keeping as placeholders/future views) -->
+            <section id="modules" class="view">
+                <h2>Investment Quests</h2>
+                <div class="modules-grid">
+                    <div class="module-card completed" data-quest="piggy-bank">
+                        <div class="module-icon"><i class="fa-solid fa-piggy-bank"></i></div>
+                        <h4>The Piggy Bank Myth</h4>
+                        <p>Why saving cash isn't enough.</p>
+                        <div class="progress"><div class="fill" style="width: 100%"></div></div>
+                    </div>
+                     <div class="module-card active" data-quest="snowball">
+                        <div class="module-icon"><i class="fa-solid fa-snowflake"></i></div>
+                        <h4>Snowball Effect</h4>
+                        <p>The magic of compound interest.</p>
+                        <div class="progress"><div class="fill" style="width: 45%"></div></div>
+                    </div>
+                    <div class="module-card locked" data-quest="stocks">
+                        <div class="module-icon"><i class="fa-solid fa-lock"></i></div>
+                        <h4>Stocks 101</h4>
+                        <p>Owning a piece of the pie.</p>
+                    </div>
+                     <div class="module-card locked" data-quest="etfs">
+                        <div class="module-icon"><i class="fa-solid fa-lock"></i></div>
+                        <h4>ETFs vs Mutual Funds</h4>
+                        <p>Diversification made easy.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI Mentor Chat View -->
+            <section id="mentor" class="view">
+                <div class="chat-container glass-card">
+                    <div class="chat-header">
+                        <i class="fa-solid fa-robot fa-2x text-accent"></i>
+                        <div>
+                            <h3>Finance Mentor</h3>
+                            <span class="status-online">● Online (Purdue GenAI)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-history" id="chatHistory">
+                        <div class="message bot">
+                            <div class="bubble">
+                                Hey there! Ready to level up your wealth? I can explain confusing finance terms, analyze a stock, or help you understand a lesson. Try asking: "Explain compound interest like I'm 5."
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat-inputbox">
+                        <form id="chatForm">
+                            <input type="text" id="userInput" placeholder="Ask me anything about investing..." required autocomplete="off">
+                            <button type="submit" class="btn-send"><i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Market News View -->
+            <section id="news" class="view">
+                <h2>Market News <span class="dim">(Yahoo Finance)</span></h2>
+                <div class="news-grid" id="newsGrid">
+                    <!-- News articles will be injected here -->
+                    <div class="glass-card loading-news" style="grid-column: 1 / -1; text-align: center; padding: 40px;">
+                        <i class="fa-solid fa-circle-notch fa-spin text-accent"></i> Fetching latest news...
+                    </div>
+                </div>
+            </section>
+
+            <!-- Roadmap View -->
+            <section id="roadmap" class="view">
+                <h2>The $0 to Wealth <span class="text-accent">Roadmap</span></h2>
+                <p style="color: var(--text-muted); margin-bottom: 32px;">A step-by-step guide to building your financial empire from scratch.</p>
+                
+                <div class="roadmap-timeline">
+                    <!-- Step 1 -->
+                    <div class="roadmap-step">
+                        <div class="step-marker" style="border-color: var(--warning); color: var(--warning);"><i class="fa-solid fa-book-open"></i></div>
+                        <div class="step-content glass-card">
+                            <h3 style="color: var(--warning);">Step 1: Mindset & Education <span class="dim">($0)</span></h3>
+                            <p>Before you invest money, invest time. Complete the Quests in TeenTycoon to understand compound interest, inflation, and risk.</p>
+                            <div style="margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap;">
+                                <a href="https://www.nerdwallet.com/article/investing/how-to-invest-in-stocks" target="_blank" class="article-pill"><i class="fa-solid fa-link"></i> NerdWallet: How to Invest in Stocks</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="roadmap-step">
+                        <div class="step-marker" style="border-color: var(--accent); color: var(--accent);"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div class="step-content glass-card">
+                            <h3 style="color: var(--accent);">Step 2: The Safety Net <span class="dim">($100 - $1,000)</span></h3>
+                            <p>Open a High Yield Savings Account (HYSA). Build an emergency fund so you never have to sell your investments to cover an unexpected expense.</p>
+                            <div style="margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap;">
+                                <a href="https://www.bankrate.com/banking/savings/best-high-yield-interests-savings-accounts/" target="_blank" class="article-pill"><i class="fa-solid fa-link"></i> Bankrate: Best HYSA Rates</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="roadmap-step">
+                        <div class="step-marker" style="border-color: var(--primary); color: var(--primary);"><i class="fa-solid fa-seedling"></i></div>
+                        <div class="step-content glass-card">
+                            <h3 style="color: var(--primary);">Step 3: First Investment <span class="dim">($10 - $500)</span></h3>
+                            <p>Open a custodial brokerage account. Buy your first fractional share of a broad market index fund (like an S&P 500 ETF) rather than individual stocks.</p>
+                            <div style="margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap;">
+                                <a href="https://www.investopedia.com/terms/e/etf.asp" target="_blank" class="article-pill"><i class="fa-solid fa-link"></i> Investopedia: What is an ETF?</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="roadmap-step">
+                        <div class="step-marker" style="border-color: var(--success); color: var(--success);"><i class="fa-solid fa-rotate"></i></div>
+                        <div class="step-content glass-card">
+                            <h3 style="color: var(--success);">Step 4: The Automation Machine <span class="dim">($50/mo)</span></h3>
+                            <p>Set up an automatic monthly transfer from your checking account to your brokerage. Consistency beats timing the market.</p>
+                            <div style="margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap;">
+                                <a href="https://www.forbes.com/advisor/investing/dollar-cost-averaging/" target="_blank" class="article-pill"><i class="fa-solid fa-link"></i> Forbes: Dollar-Cost Averaging</a>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Step 5 -->
+                    <div class="roadmap-step">
+                        <div class="step-marker" style="border-color: #fff; color: #fff; background: var(--accent);"><i class="fa-solid fa-crown"></i></div>
+                        <div class="step-content glass-card" style="border-color: var(--accent);">
+                            <h3 style="text-shadow: 0 0 10px var(--accent-glow);">Step 5: Let It Snowball <span class="dim">(Years 5+)</span></h3>
+                            <p>Reinvest all dividends. Don't panic during market dips. Let compound interest do the heavy lifting for the next few decades.</p>
+                            <div style="margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap;">
+                                <a href="https://investor.vanguard.com/investor-resources-education/article/how-to-reinvest-dividends" target="_blank" class="article-pill"><i class="fa-solid fa-link"></i> Vanguard: Reinvesting Dividends</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mentor View -->
+            <section id="mentor" class="view">
+                <div class="mentor-container" style="max-width: 800px; margin: 0 auto;">
+                    <div class="mentor-header" style="display: flex; align-items: center; gap: 20px; margin-bottom: 24px;">
+                        <div class="mentor-avatar" style="width: 60px; height: 60px; border-radius: 50%; background: rgba(0, 246, 255, 0.1); border: 2px solid var(--accent); display: flex; align-items: center; justify-content: center; font-size: 24px; color: var(--accent); box-shadow: 0 0 20px rgba(0, 246, 255, 0.2);">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <div>
+                            <h2 style="margin-bottom: 4px; font-size: 28px;">AI Finance Mentor</h2>
+                            <p style="color: var(--text-muted); font-size: 16px;">Ask questions about investing, saving, or decoding financial jargon.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-container glass-card" style="display: flex; flex-direction: column; height: 60vh; max-height: 600px; padding: 24px;">
+                        <div class="chat-history" id="chatHistory" style="flex: 1; overflow-y: auto; padding-right: 12px; display: flex; flex-direction: column; gap: 16px; margin-bottom: 20px;">
+                            <div class="chat-message bot" style="align-self: flex-start; max-width: 80%;">
+                                <div class="message-bubble" style="background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border-color); padding: 16px 20px; border-radius: 20px 20px 20px 4px; font-size: 15px; line-height: 1.6;">
+                                    I'm your AI mentor. You can ask me to explain a financial concept like "what is an ETF?" or help you figure out how to start investing. How can I help today?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-inputbox" style="margin-top: auto;">
+                            <form id="chatForm" style="display: flex; gap: 12px;">
+                                <input type="text" id="userInput" placeholder="Ask about stocks, compound interest, or side hustles..." autocomplete="off" style="flex: 1; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border-color); padding: 14px 20px; border-radius: var(--radius-sm); color: white; outline: none; font-size: 16px; transition: border-color 0.2s;">
+                                <button type="submit" class="btn-send" style="background: var(--primary); color: white; border: none; width: 50px; border-radius: var(--radius-sm); cursor: pointer; transition: transform 0.2s; display: flex; align-items: center; justify-content: center;"><i class="fa-solid fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quest Modal -->
+            <div id="questModal" class="modal-overlay hidden">
+                <div class="modal-content glass-card">
+                    <button class="close-modal"><i class="fa-solid fa-xmark"></i></button>
+                    <div class="modal-header">
+                        <div class="module-icon" id="modalIcon"><i class="fa-solid fa-star"></i></div>
+                        <h2 id="modalTitle">Quest Title</h2>
+                    </div>
+                    <div class="modal-body" id="modalBody">
+                        <!-- Content dynamically injected here -->
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn-primary" id="btnCompleteQuest">Complete Quest (+50 XP)</button>
+                        <button class="btn-secondary" onclick="app.navigateTo('mentor'); document.getElementById('questModal').classList.add('hidden');">Ask Mentor for Help</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tool Modal -->
+            <div id="toolModal" class="modal-overlay hidden">
+                <div class="modal-content glass-card" style="max-width: 600px;">
+                    <button class="close-modal" onclick="document.getElementById('toolModal').classList.add('hidden')"><i class="fa-solid fa-xmark"></i></button>
+                    <div class="modal-header" style="border-bottom: 1px solid var(--border-color); padding-bottom: 16px; margin-bottom: 24px;">
+                        <div class="module-icon" id="toolModalIcon" style="background: rgba(0, 246, 255, 0.1); color: var(--accent);"><i class="fa-solid fa-wrench"></i></div>
+                        <div>
+                            <h2 id="toolModalTitle" style="font-size: 24px; margin-bottom: 4px;">Tool Title</h2>
+                            <p id="toolModalDesc" style="color: var(--text-muted); font-size: 14px;">Tool Description</p>
+                        </div>
+                    </div>
+                    <div class="modal-body" id="toolModalBody">
+                        <!-- Content dynamically injected here -->
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="api.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
