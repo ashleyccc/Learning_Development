@@ -438,6 +438,28 @@ const app = {
         });
     },
 
+    openMentorForArticle(articleTitle) {
+        // Switch view to mentor
+        this.navigateTo('mentor');
+        
+        // Give the UI a tiny moment to render the view before interacting with inputs
+        setTimeout(() => {
+            const userInput = document.getElementById('userInput');
+            const chatForm = document.getElementById('chatForm');
+            
+            if (userInput && chatForm) {
+                // Pre-populate the input
+                userInput.value = `Can you break down the core concepts from the article: "${articleTitle}"? Explain it like I'm a beginner.`;
+                
+                // Programmatically submit the form
+                chatForm.dispatchEvent(new Event('submit', {
+                    'bubbles': true,
+                    'cancelable': true
+                }));
+            }
+        }, 150);
+    },
+
     addMessageToChat(text, sender) {
         const history = document.getElementById('chatHistory');
         const div = document.createElement('div');
