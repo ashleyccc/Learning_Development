@@ -24,6 +24,7 @@
                     <li data-target="tools">Tools</li>
                     <li data-target="insights">Insights</li>
                     <li data-target="professionals">Professionals</li>
+                    <li data-target="accounts" style="color: var(--warning);"><i class="fa-solid fa-vault"></i> Accounts</li>
                     <li data-target="mentor"><i class="fa-solid fa-robot text-accent"></i> AI Mentor</li>
                 </ul>
                 <div class="nav-actions">
@@ -481,6 +482,55 @@
                                 <input type="text" id="userInput" placeholder="Ask about stocks, compound interest, or side hustles..." autocomplete="off" style="flex: 1; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border-color); padding: 14px 20px; border-radius: var(--radius-sm); color: white; outline: none; font-size: 16px; transition: border-color 0.2s;">
                                 <button type="submit" class="btn-send" style="background: var(--primary); color: white; border: none; width: 50px; border-radius: var(--radius-sm); cursor: pointer; transition: transform 0.2s; display: flex; align-items: center; justify-content: center;"><i class="fa-solid fa-paper-plane"></i></button>
                             </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tax-Advantaged Accounts View -->
+            <section id="accounts" class="view">
+                <div class="section-container">
+                    <div class="section-header" style="text-align: center; margin-bottom: 60px;">
+                        <h2 style="font-size: 40px; margin-bottom: 16px;">Tax-Advantaged <span class="text-warning">Wealth Engines.</span></h2>
+                        <p style="color: var(--text-muted); font-size: 18px; max-width: 700px; margin: 0 auto; line-height: 1.6;">The government legally allows you to shield your investments from taxes if you use the right accounts. These are the tools the wealthy use to keep their money.</p>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 60px;">
+                        <!-- 401(k) Card -->
+                        <div class="glass-card" style="padding: 40px; border-top: 4px solid var(--accent);">
+                            <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 24px;">
+                                <div style="width: 50px; height: 50px; border-radius: 12px; background: rgba(0, 246, 255, 0.1); display: flex; align-items: center; justify-content: center; font-size: 24px; color: var(--accent);">
+                                    <i class="fa-solid fa-building-columns"></i>
+                                </div>
+                                <h3 style="font-size: 28px;">The 401(k) Match</h3>
+                            </div>
+                            <p style="color: var(--text-muted); font-size: 16px; line-height: 1.6; margin-bottom: 24px;">A 401(k) is an employer-sponsored retirement account. The most critical feature is the <strong>Employer Match</strong>. If your employer offers a "4% match," and you put 4% of your paycheck into the account, they will give you another 4% for free. It is a 100% immediate return on your investment.</p>
+                            
+                            <h4 style="margin-bottom: 12px; font-size: 16px; color: white;">Pre-Tax vs Roth:</h4>
+                            <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 32px; color: var(--text-muted);">
+                                <li><i class="fa-solid fa-check text-success" style="margin-right: 8px;"></i> <strong>Traditional (Pre-Tax):</strong> Contributions lower your taxable income today. You pay taxes when you withdraw in retirement.</li>
+                                <li><i class="fa-solid fa-check text-success" style="margin-right: 8px;"></i> <strong>Roth:</strong> You pay taxes today. All future growth and withdrawals are 100% tax-free. (Usually best for young people in lower tax brackets).</li>
+                            </ul>
+
+                            <a href="https://www.fidelity.com/learning-center/smart-money/what-is-a-401k" target="_blank" class="article-pill" style="display: inline-flex; width: 100%; justify-content: center;"><i class="fa-solid fa-link"></i> Fidelity: Deep-Dive into 401(k)s</a>
+                        </div>
+
+                        <!-- 529 Card -->
+                        <div class="glass-card" style="padding: 40px; border-top: 4px solid var(--warning);">
+                            <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 24px;">
+                                <div style="width: 50px; height: 50px; border-radius: 12px; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; font-size: 24px; color: var(--warning);">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </div>
+                                <h3 style="font-size: 28px;">The 529 Plan</h3>
+                            </div>
+                            <p style="color: var(--text-muted); font-size: 16px; line-height: 1.6; margin-bottom: 24px;">A 529 Plan is a tax-advantaged investment account specifically designed to encourage saving for future education costs. The money grows tax-free and withdrawals are tax-free as long as they are used for qualified education expenses (tuition, room, board).</p>
+                            
+                            <div style="background: rgba(255,255,255,0.05); border: 1px solid var(--border-color); padding: 20px; border-radius: 12px; margin-bottom: 32px;">
+                                <h4 style="color: var(--warning); margin-bottom: 8px; font-size: 14px; text-transform: uppercase;">New SECURE 2.0 Loophole</h4>
+                                <p style="color: var(--text-muted); font-size: 14px; line-height: 1.5;">Historically, if you didn't go to college, the money was trapped. Now, thanks to the SECURE 2.0 Act, you can roll up to <strong>$35,000</strong> of unused 529 funds directly into a tax-free Roth IRA, effectively jumpstarting your retirement.</p>
+                            </div>
+
+                            <a href="https://www.morningstar.com/personal-finance/morningstar-529-ratings" target="_blank" class="article-pill" style="display: inline-flex; width: 100%; justify-content: center;"><i class="fa-solid fa-link"></i> Morningstar: Top Rated 529 Plans</a>
                         </div>
                     </div>
                 </div>
